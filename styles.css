@@ -1,0 +1,64 @@
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    text-align: center;
+    background: linear-gradient(to right, #d61d1d, #7c0a0a);
+    border-radius: 10px;
+    font-family:'Courier New', Courier, monospace
+}
+
+body {
+    margin-top: 110px;
+    background-color: rgb(17, 17, 17);
+}
+
+.samurai-image {
+     width: 500px;
+     height: auto;
+     display: block;
+     margin: 20px auto;
+     border: 2px solid #ccc;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease;
+}
+
+.samurai-image:hover {
+    transform: scale(1.05);
+}
+
+p {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.samurai-list {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: rgba(73, 73, 73, 0.5);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+}
