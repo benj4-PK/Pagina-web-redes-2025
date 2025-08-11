@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Quiz</title>
+</head>
+<header>
+    <ul>
+ <li><a href="principal.html">Inicio</a></li>
+ <li><a href="quiz.html">Quiz</a></li>
+ <li><a href="Sobre mi">Sobre mi</a></li>
+</ul>
+    <div class="encabezado">
+        <img src="logo.png" alt="samurai" class="logo">
+    <h1>Quiz de la era samurai en Japón</h1>
+    </div>
+</header>
+<body>
+<div class=formulario>
+    <form id="quiz-form">
+    <div class="pregunta" action="resultados.php" method="post">
+        <p>1. ¿En qué siglo comenzó la era samurai?</p>
+        <label><input type="radio" name="q1" value="XII"> Siglo XII</label>
+        <label><input type="radio" name="q1" value="XV"> Siglo XV</label>
+        <label><input type="radio" name="q1" value="IX"> Siglo IX</label>
+    </div>
+    <div class="pregunta">
+        <p>2. ¿Cuál era el código de honor de los samuráis?</p>
+        <label><input type="radio" name="q2" value="Bushido"> Bushido</label>
+        <label><input type="radio" name="q2" value="Kendo"> Kendo</label>
+        <label><input type="radio" name="q2" value="Shinto"> Shinto</label>
+    </div>
+        <div class="pregunta">
+        <p>3. ¿Cual es el nombre de la primer era samurai?</p>
+        <label><input type="radio" name="q3" value="Era Sengoku"> Era Sengoku</label>
+        <label><input type="radio" name="q3" value="Era Kamakura"> Era Kamakura</label>
+        <label><input type="radio" name="q3" value="Era Heian"> Era Heian</label>
+    </div>
+    <div class="pregunta">
+        <p>4. ¿quien establecio el shogunato Kamakura?</p>
+        <label><input type="radio" name="q4" value="Miyamoto Musashi"> Miyamoto Musashi</label>
+        <label><input type="radio" name="q4" value="Minamoto no Yoritomo"> Minamoto no Yoritomo</label>
+        <label><input type="radio" name="q4" value="Hattori Hanzo"> Hattori Hanzo</label>
+    </div>
+    <button type="button" onclick="enviarQuiz()">Enviar</button>
+</form>
+<div id="resultado"></div>
+</div>
+<script>
+function calcularResultado() {
+    let puntaje = 0;
+    if (document.querySelector('input[name="q1"]:checked')?.value === "XII") puntaje++;
+    if (document.querySelector('input[name="q2"]:checked')?.value === "Bushido") puntaje++;
+    if (document.querySelector('input[name="q3"]:checked')?.value === "Era Heian") puntaje++;
+    if (document.querySelector('input[name="q4"]:checked')?.value === "Minamoto no Yoritomo") puntaje++;
+    document.getElementById('resultado').innerText = "Respuestas correctas: " + puntaje + " de 4";
+}
+function enviarQuiz() {
+    calcularResultado();
+    // Aquí puedes agregar la lógica para enviar el formulario si es necesario
+    window.location.href = "resultados.php";
+        } 1000;
+
+</script>
+</body>
+</html>
