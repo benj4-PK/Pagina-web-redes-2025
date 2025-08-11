@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" href="../Imagenes/favicon.ico">
     <title>Quiz</title>
 </head>
+<body>
 <header>
     <ul>
- <li><a href="principal.html">Inicio</a></li>
- <li><a href="quiz.html">Quiz</a></li>
- <li><a href="Sobre mi">Sobre mi</a></li>
-</ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="Samurais.html">Samurais</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+    </ul>
     <div class="encabezado">
-        <img src="logo.png" alt="samurai" class="logo">
-    <h1>Quiz de la era samurai en Japón</h1>
+        <img src="../Imagenes/logo.png" alt="samurai" class="logo">
+        <h1>Quiz de la era samurai en Japón</h1>
     </div>
 </header>
-<body>
 <div class=formulario>
     <form id="quiz-form">
     <div class="pregunta" action="resultados.php" method="post">
@@ -60,8 +60,7 @@ function calcularResultado() {
 }
 function enviarQuiz() {
     calcularResultado();
-    // Aquí puedes agregar la lógica para enviar el formulario si es necesario
-    window.location.href = "resultados.php";
+
         } 1000;
 
 </script>

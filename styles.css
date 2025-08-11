@@ -97,6 +97,7 @@ p {
     float: none;
     margin: 8px 0;
     text-align: left;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .clanes{
@@ -206,3 +207,11 @@ a:hover {
     color: white;
 }
 
+p  {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 20px auto;
+}
