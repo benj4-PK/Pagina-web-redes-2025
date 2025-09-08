@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Imagenes/favicon.ico">
+    <title>La era samurai en japon</title>
+</head>
+<header>hola
+    <ul>
+ <li><a href="inicio.html">Inicio</a></li>
+ <li><a href="HTML/quiz.html">Quiz</a></li>
+</ul>
+    <div class="encabezado">
+        <img src="Imagenes/logo.png" alt="samurai" class="logo">
+    <h1>La era samurai en Japón</h1>
+    </div>
+</header>
+<body>
+    <p>
+        La era samurai en Japón, que abarca desde el siglo XII hasta el siglo XIX, fue un período marcado por la presencia de los guerreros samuráis, quienes desempeñaron un papel crucial en la historia y cultura japonesa. Los samuráis eran miembros de la clase guerrera que seguían un código de honor conocido como Bushido, que enfatizaba la lealtad, el coraje y la disciplina.
+    </p>
+    <img src="Imagenes/samurai.jpg" alt="samurai, heroes del antiguo japon" class="samurai-image">
+    <p>
+        Durante este tiempo, Japón experimentó una serie de guerras civiles, luchas por el poder y cambios políticos significativos. El período Edo (1603-1868) fue especialmente notable, ya que trajo consigo un largo período de paz y estabilidad bajo el shogunato Tokugawa, donde los samuráis se convirtieron en administradores y funcionarios más que en guerreros activos.
+    </p>
+    <p>
+        La era samurai también dejó un legado cultural duradero, incluyendo artes marciales, literatura, teatro y filosofía. Aunque los samuráis perdieron su estatus oficial con la Restauración Meiji en 1868, su influencia sigue siendo evidente en la sociedad japonesa contemporánea.
+    </p>
+
+    <p>Los samuráis eran conocidos por su destreza en el combate, especialmente con la katana, y por su dedicación a la perfección en todas las áreas de la vida. La figura del samurái ha sido romantizada en la cultura popular, convirtiéndose en un símbolo de honor y valentía.</p>
+
+    
+<div class="samurai-list">
+    <h2>Samurai más renombrados:</h2>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">Miyamoto Musashi</button>
+    <div class="accordion-content">
+      <p>Fue un famoso espadachín japonés, filósofo y estratega. Es conocido por su estilo de combate con dos espadas y por ser el autor del libro "El libro de los cinco anillos".</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-header">Oda Nobunaga</button>
+    <div class="accordion-content">
+      <p>Un poderoso daimyo japonés que jugó un papel crucial en la unificación de Japón durante el período Sengoku.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-header">Hattori Hanzo</button>
+    <div class="accordion-content">
+      <p>Famoso ninja y espía japonés, conocido por su lealtad y habilidades excepcionales en el combate.</p>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <button class="accordion-header">Minamoto no Yoritomo</button>
+    <div class="accordion-content">
+        <p>Minamoto no Yoritomo fue el primer shōgun de Japón, fundador del shogunato Kamakura. Su liderazgo marcó el inicio de la era samurai en Japón.</p>
+    </div>
+  </div>
+     <div class="accordion-item">
+        <button class="accordion-header">Tachibana no Hayanari</button>
+        <div class="accordion-content">
+        <p>Tachibana no Hayanari fue un destacado samurai y político japonés del período Heian. Es conocido por su papel en la política y la cultura de su tiempo, así como por su habilidad en el combate.</p>
+        </div>
+     </div>
+</div>
+</div>
+
+<style>
+.accordion {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+}
+.accordion-header {
+  width: 100%;
+  background: #d81e1e;
+  color: #fff;
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 16px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 6px 6px 0 0;
+  margin-bottom: 2px;
+}
+.accordion-header:hover {
+  background: #b71c1c;
+}
+.accordion-content {
+  display: none;
+  background: #222;
+  color: #fff;
+  padding: 16px;
+  border-radius: 0 0 6px 6px;
+  margin-bottom: 10px;
+}
+.accordion-item.active .accordion-content {
+  display: block;
+}
+</style>
+
+<script>
+document.querySelectorAll('.accordion-header').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const item = this.parentElement;
+    item.classList.toggle('active');
+  });
+});
+</script>
+
+    <p>La era samurai en Japón fue un período fascinante que moldeó la identidad nacional y cultural del país, dejando un impacto duradero que aún se siente hoy en día.</p>
+
+    <p>Las diferentes eras samurai abarcan desde el siglo IX hasta el siglo XIX, marcadas por cambios en el poder, la sociedad y la cultura japonesa. Estas eras se pueden dividir en: <mark>Heian, Kamakura, Muromachi, Sengoku, Azuchi-Momoyama y Tokugawa.</mark></p>
+<div class="botones-eras" id="botones-eras">
+    <!-- Los botones se generarán con JavaScript -->
+</div>
+    <div style="text-align:center; margin-bottom:20px;">
+    <button id="anterior" style="display:none;">&#8592; Anterior</button>
+    <button id="siguiente">&#8594; Siguiente</button>
+</div>
+
+<div id="heian" class="era-info">
+    <!-- Contenido de la era Heian -->
+    <h2>¿Que fue la era heian para los samurai?</h2>
+    <p>La era Heian, que abarca desde el 794 hasta el 1185, es un período crucial en la historia de Japón, marcado por un florecimiento cultural y artístico. Durante esta época, la capital se trasladó a Heian-kyo (actual Kioto), lo que permitió un desarrollo significativo en la literatura, la poesía y las artes visuales.</p>
+    <p>Los samuráis, aunque no eran la clase dominante en este período, comenzaron a consolidar su poder y estatus. La figura del samurái se asoció con el código de honor conocido como Bushido, que enfatizaba la lealtad, el coraje y la disciplina. Este código se desarrolló en parte durante la era Heian, sentando las bases para el futuro papel de los samuráis en la sociedad japonesa.</p>
+    <img src="Imagenes/Heian.jpg" alt="Era Heian" class="samurai-image">
+    <p style="text-align: center; width: 600px;">Yoritomo Minamoto, después de derrotar al clan gobernante Taira y marcar el comienzo del período Kamakura y el gobierno del Shogunato Minamoto.</p>
+
+    <h2>Sucesos importantes que causaron el inicio de la era Heian</h2>
+    <p>El período Heian comenzó con el traslado de la capital a Heian-kyo, lo que marcó un cambio significativo en la política y la cultura japonesa. Durante esta época, la nobleza se centró en el desarrollo de una cultura refinada, caracterizada por la poesía, la literatura y las artes visuales.</p>
+    <p>Uno de los eventos más importantes fue la creación del sistema de clanes, donde las familias nobles comenzaron a consolidar su poder. La familia Fujiwara, en particular, desempeñó un papel crucial al controlar la corte imperial a través de matrimonios estratégicos y alianzas políticas.</p>
+    <p>Además, la era Heian vio el surgimiento de la figura del samurái, aunque su influencia no era tan prominente como en períodos posteriores. Los samuráis comenzaron a establecerse como guerreros leales a los nobles, y su código de honor, el Bushido, comenzó a tomar forma.</p>
+
+    <h2>¿Que influencia tuvieron los samurai?</h2>
+    <p>Los samuráis, aunque no eran la clase dominante durante la era Heian, comenzaron a establecerse como guerreros leales a los nobles. Su influencia se hizo más evidente a medida que el período avanzaba, especialmente con el surgimiento de clanes poderosos como los Minamoto y los Taira.</p>
+    <p>La figura del samurái se asoció con el <mark>código de honor conocido como Bushido</mark>, que enfatizaba la lealtad, el coraje y la disciplina. Este código se desarrolló en parte durante la era Heian, sentando las bases para el futuro papel de los samuráis en la sociedad japonesa.</p>
+
+    <div class="clanes">
+        <h2>Clanes importantes de la era Heian</h2>
+        <ul>
+            <li><mark>Clan Fujiwara:</mark> Dominante en la corte imperial, controlaron la política a través de matrimonios estratégicos.</li>
+            <li><mark>Clan Minamoto:</mark> Emergieron como guerreros poderosos, sentando las bases para futuros shogunatos.</li>
+            <li><mark>Clan Taira:</mark> Rival del clan Minamoto, conocido por su participación en las guerras civiles de la época.</li>
+        </ul>
+    </div>
+
+    <h2>Sucesos por los que termino la era Heian</h2>
+    <p>La era Heian llegó a su fin con el estallido de las guerras civiles, especialmente la Guerra Genpei (1180-1185), que enfrentó a los clanes Minamoto y Taira. Esta guerra culminó con la victoria de los Minamoto, lo que llevó al establecimiento del primer shogunato en Japón bajo Minamoto no Yoritomo.</p>
+    <p>El final de la era Heian marcó el comienzo del período Kamakura, donde los samuráis adquirieron un papel más prominente en la política y la sociedad japonesa. La figura del samurái se consolidó como un símbolo de honor y lealtad, y el código Bushido se convirtió en un principio fundamental en la vida de los guerreros japoneses.</p>
+    >
+</div>
+<div id="kamakura" class="era-info" style="display:none;">
+    <!-- Contenido de la era Kamakura -->
+    <h2>¿Que fue la era Kamakura para los samurai?</h2>
+    <p>La era Kamakura, que abarca desde 1185 hasta 1333, es un período crucial en la historia de Japón, marcado por el establecimiento del primer shogunato y el ascenso de los samuráis como clase dominante. Durante esta época, la figura del samurái se consolidó como un símbolo de honor y lealtad, y el código Bushido se convirtió en un principio fundamental en la vida de los guerreros japoneses.</p>
+    <p>Los samuráis, que habían comenzado a ganar influencia durante la era Heian, se convirtieron en la clase gobernante bajo el liderazgo de Minamoto no Yoritomo, quien estableció el shogunato Kamakura. Este período también se caracterizó por la defensa exitosa contra las invasiones mongolas y el desarrollo de una cultura samurái distintiva.</p>
+    <img src="Imagenes/kamakura.png" alt="Era Kamakura" class="samurai-image">
+    <p style="text-align: center; width: 600px;">Armaduras durante el periodo Kamakura.</p>
+
+    <h2>Sucesos importantes que causaron el inicio de la era Kamakura</h2>
+    <p>El período Kamakura comenzó con la victoria de Minamoto no Yoritomo en la Guerra Genpei (1180-1185) contra el clan Taira. Esta guerra culminó con la derrota del clan Taira y el establecimiento del shogunato Kamakura, que marcó el inicio de un nuevo sistema de gobierno en Japón.</p>
+    <p>La victoria de los Minamoto permitió a Yoritomo consolidar su poder y establecer un gobierno militar en Kamakura, lo que significó un cambio significativo en la estructura política de Japón. Este nuevo sistema de gobierno permitió a los samuráis ejercer un control más directo sobre las tierras y la población, sentando las bases para el futuro dominio samurái en la sociedad japonesa.</p>
+    <p>Además, la era Kamakura se caracterizó por la defensa exitosa contra las invasiones mongolas en 1274 y 1281, lo que fortaleció aún más la posición de los samuráis como defensores de Japón. Estas invasiones, conocidas como las invasiones de Kublai Khan, fueron repelidas en gran parte gracias a la valentía y habilidad militar de los samuráis, así como a la intervención de tifones conocidos como "kamikaze" o vientos divinos.</p>
+
+    <h2>¿Que influencia tuvieron los samurai?</h2>
+    <p>Los samuráis tuvieron una influencia significativa durante la era Kamakura, ya que se convirtieron en la clase gobernante y establecieron un nuevo orden social y político. Bajo el liderazgo de Minamoto no Yoritomo, los samuráis consolidaron su poder y comenzaron a ejercer un control más directo sobre las tierras y la población.</p>
+    <p>La figura del samurái se asoció con el código de honor conocido como Bushido, que enfatizaba la lealtad, el coraje y la disciplina. Este código se convirtió en un principio fundamental en la vida de los guerreros japoneses y sentó las bases para la cultura samurái que perduraría en los siglos siguientes.</p>
+    <div class="clanes">
+        <h2>Clanes importantes de la era Kamakura</h2>
+        <ul>
+            <li><mark>Clan Minamoto:</mark> Fundador del shogunato Kamakura, consolidó el poder samurái en Japón.</li>
+            <li><mark>Clan Taira:</mark> Rival del clan Minamoto, derrotado en la Guerra Genpei.</li>
+            <li><mark>Clan Hōjō:</mark> Asumió el control del shogunato como regentes durante gran parte de la era Kamakura.</li>
+        </ul>
+    </div>
+    <h2>Sucesos por los que termino la era Kamakura</h2>
+    <p>La era Kamakura llegó a su fin en 1333 con la caída del shogunato Kamakura, que fue derrocado por Ashikaga Takauji durante la Guerra de Genkō. Este conflicto marcó el inicio del período Muromachi y el establecimiento del shogunato Ashikaga.</p>
+    <p>El final de la era Kamakura significó el colapso del sistema de gobierno militar establecido por Minamoto no Yoritomo y el ascenso de nuevos clanes al poder. Aunque los samuráis continuaron desempeñando un papel importante en la sociedad japonesa, la estructura política y social cambió significativamente con el advenimiento del shogunato Ashikaga.</p>
+
+</div>
+<div id="muromachi" class="era-info" style="display:none;">
+    <!-- Contenido de la era Muromachi -->
+    <h2>¿Que fue la era Muromachi?</h2>
+    <p>La era Muromachi, que abarca desde 1336 hasta 1573, es un período significativo en la historia de Japón, caracterizado por el establecimiento del shogunato Ashikaga y un florecimiento cultural notable. Durante esta época, los samuráis continuaron desempeñando un papel crucial en la política y la sociedad japonesa, consolidando su influencia y poder.</p>
+    <p>El shogunato Ashikaga, fundado por Ashikaga Takauji, marcó un cambio en la estructura política de Japón, con el shogunato gobernando desde Kioto. Este período también se conoce por su desarrollo cultural, incluyendo el auge del teatro Noh, la poesía y las artes visuales.</p>
+    <img src="Imagenes/Muromachi.jpg" alt="Era Muromachi" class="samurai-image">
+    <p style="text-align: center; width: 600px;">Emperador Go-Daigo. 
+Fue el 96º emperador de Japón, reinando desde 1318 hasta 1339.</p>
+
+    <h2>Sucesos importantes que causaron el inicio de la era Muromachi</h2>
+    <p>El período Muromachi comenzó con la victoria de Ashikaga Takauji en la Guerra de Genkō (1331-1333) contra el shogunato Kamakura. Esta guerra culminó con la derrota del shogunato Kamakura y el establecimiento del shogunato Ashikaga, que marcó un cambio significativo en la estructura política de Japón.</p>
+    <p>La victoria de Takauji permitió a los Ashikaga consolidar su poder y establecer un gobierno militar en Kioto, lo que significó un cambio en la dinámica de poder entre los clanes samuráis. Este nuevo sistema de gobierno permitió a los samuráis ejercer un control más directo sobre las tierras y la población, sentando las bases para el futuro dominio samurái en la sociedad japonesa.</p>
+    <p>Además, la era Muromachi se caracterizó por el desarrollo de una cultura samurái distintiva, con un enfoque en las artes, la poesía y el teatro. El teatro Noh, en particular, se convirtió en una forma de arte importante durante este período, reflejando los valores y la estética de la clase samurái.</p>
+    
+    <h2>¿Que influencia tuvieron los samurai?</h2>
+    <p>hubo una profunda influencia en la cultura samurái, especialmente a través del auge del budismo zen y el desarrollo de nuevas formas de arte como el teatro Noh y la ceremonia del té. El budismo zen, con su énfasis en la meditación y la disciplina, resonó con los valores samuráis, influyendo en su ética y estética, mientras que las nuevas formas de arte se convirtieron en expresiones importantes de la cultura samurái.</p> 
+    <p>Los samuráis continuaron desempeñando un papel crucial en la política y la sociedad japonesa, consolidando su influencia y poder.</p>
+    <div class="clanes">
+        <h2>Clanes importantes de la era Muromachi</h2>
+        <ul>
+            <li><mark>Clan Ashikaga:</mark> Fundador del shogunato Ashikaga, consolidó el poder samurái en Japón.</li>
+            <li><mark>Clan Hosokawa:</mark> Aliado importante del shogunato Ashikaga, desempeñó un papel clave en la política de la época.</li>
+            <li><mark>Clan Uesugi:</mark> Rival del clan Ashikaga, conocido por su influencia en el norte de Japón.</li>
+        </ul>
+    </div>
+    <h2>Sucesos por los que termino la era Muromachi</h2>
+    <p>La era Muromachi llegó a su fin en 1573 con la derrota del shogunato Ashikaga por Oda Nobunaga, un líder militar que buscaba unificar Japón bajo su mando. Esta derrota marcó el colapso del shogunato Ashikaga y el inicio del período Sengoku, caracterizado por la fragmentación política y las luchas entre clanes samuráis.</p>
+    <p>El final de la era Muromachi significó el colapso del sistema de gobierno militar establecido por Ashikaga Takauji y el ascenso de nuevos líderes militares al poder. Aunque los samuráis continuaron desempeñando un papel importante en la sociedad japonesa, la estructura política y social cambió significativamente con el advenimiento del período Sengoku.</p>
+</div>
+
+<div id="sengoku" class="era-info">
+    <h2>¿Que fue la era Sengoku?</h2>
+    <p>La era Sengoku. Este período se caracteriza por una intensa guerra civil y caos social en todo Japón. Se considera que el inicio de la Era Sengoku es la Guerra de Ōnin (1467-1477), que devastó Kioto y marcó el colapso efectivo del poder del shogunato Muromachi, caracterizado por la fragmentación política y las luchas entre clanes samuráis. Durante esta época, Japón se vio sumido en una serie de guerras civiles y conflictos territoriales, lo que llevó a un cambio significativo en la estructura política y social del país.</p>
+    <p>La era Sengoku, también conocida como el período de los Estados Guerreros, fue testigo del ascenso y caída de numerosos clanes samuráis, cada uno luchando por el control territorial y la supremacía militar. Este período también se caracterizó por el surgimiento de líderes militares poderosos, como Oda Nobunaga, Toyotomi Hideyoshi y Tokugawa Ieyasu, quienes jugaron un papel crucial en la unificación de Japón.</p>
+    <img src="Imagenes/sengoku.jpg" alt="Era Sengoku" class="samurai-image">
+    <p style="text-align: center; width: 600px;">Oda Nobunaga, uno de los líderes más destacados de la era Sengoku, conocido por sus tácticas militares innovadoras y su ambición de unificar Japón.</p>
+
+    <h2>Sucesos importantes que causaron el inicio de la era Sengoku</h2>
+    <p>Como antes se mencionó, el período Sengoku comenzó con la Guerra de Ōnin (1467-1477), que marcó el colapso efectivo del poder del shogunato Muromachi. Esta guerra civil devastó Kioto y llevó a la fragmentación del poder político en Japón, con numerosos clanes samuráis luchando por el control territorial.</p>
+    <p>La guerra de Ōnin fue un conflicto entre dos facciones rivales de la nobleza, lo que resultó en una lucha por el poder que se extendió por todo Japón. Este conflicto dejó a muchas regiones sin un gobierno central fuerte, lo que permitió a los clanes samuráis establecerse como líderes locales y comenzar a consolidar su poder.</p>
+    <p>Además, la era Sengoku se caracterizó por el surgimiento de líderes militares poderosos, como Oda Nobunaga, Toyotomi Hideyoshi y Tokugawa Ieyasu, quienes jugaron un papel crucial en la unificación de Japón. Estos líderes utilizaron tácticas militares innovadoras y estrategias políticas para consolidar su poder y expandir sus territorios.</p>
+    <h2>¿Que influencia tuvieron los samurai?</h2>
+    <p>La influencia de los samuráis en la era Sengoku fue profunda y multifacética. Durante este período de guerras civiles en Japón, los samuráis no solo fueron guerreros, sino que también desempeñaron roles clave en la política, la cultura y la sociedad, impulsando cambios significativos en la estructura de poder y las artes. </p>
+    <p>Estos se convirtieron en los principales actores en las luchas por el poder y el control territorial. Este período vio el surgimiento de líderes militares samuráis que utilizaron tácticas innovadoras y estrategias políticas para consolidar su poder y expandir sus territorios.</p>
+
+    <div class="clanes">
+        <h2>Clanes importantes de la era Sengoku</h2>
+        <ul>
+            <li><mark>Clan Oda:</mark> Liderado por Oda Nobunaga, uno de los clanes más poderosos y ambiciosos de la era Sengoku.</li>
+            <li><mark>Clan Toyotomi:</mark> Fundado por Toyotomi Hideyoshi, quien logró unificar Japón después de la muerte de Nobunaga.</li>
+            <li><mark>Clan Tokugawa:</mark> Liderado por Tokugawa Ieyasu, quien estableció el shogunato Tokugawa y trajo un período de paz y estabilidad.</li>
+        </ul>
+    </div>
+    <h2>Sucesos por los que termino la era Sengoku</h2>
+    <p>La era Sengoku llegó a su fin en 1615 con el establecimiento del shogunato Tokugawa por Tokugawa Ieyasu, quien logró unificar Japón después de una serie de guerras civiles y conflictos territoriales. Este evento marcó el inicio del período Azuchi-Momoyama.</p>
+    <p>El final de la era Sengoku significó el colapso del sistema de clanes samuráis en guerra y el establecimiento de un gobierno central fuerte bajo el liderazgo de Tokugawa Ieyasu. Este nuevo sistema político permitió a los samuráis desempeñar un papel más administrativo y burocrático, alejándose de su papel tradicional como guerreros.</p>
+</div>
+
+<div id="azuchi-momoyama" class="era-info" style="display:none;">
+    <!-- Contenido de la era Azuchi-Momoyama -->
+    <h2>¿Que fue la era Azuchi-Momoyama?</h2>
+    <p>La era Azuchi Momoyama comenzó en 1568 cuando Oda Nobunaga entró a Kioto unificando gradualmente Japón luego de un largo período de guerra civil conocida como Sengoku. Este período vio el ascenso de poderosos líderes como Nobunaga y posteriormente Toyotomi Hideyoshi quienes trabajaron para consolidar el poder y establecer un gobierno central. La construcción de grandes castillos como los de Azuchi y Momoyama símbolos de poder y riqueza dieron nombre a esta época marcada por cambios culturales y políticos significativos.</p>
+    <p>La era Azuchi-Momoyama en Japón (1573-1603) no tuvo un shogunato propio. Fue un período de transición que siguió al shogunato Ashikaga y precedió al shogunato Tokugawa. Durante este tiempo, hubo intentos de unificación liderados por Oda Nobunaga y Toyotomi Hideyoshi, pero no establecieron un nuevo shogunato. La era Azuchi-Momoyama termina con el ascenso de Tokugawa Ieyasu y el establecimiento del shogunato Tokugawa. </p>
+    
+    <img src="Imagenes/AzuchiMomoyama.jpg" alt="Era Azuchi-Momoyama" class="samurai-image">
+    <p style="text-align: center; width: 600px;">Castillo de Azuchi, construido por Oda Nobunaga durante la era Azuchi-Momoyama.</p>
+
+    <h2>Sucesos importantes que causaron el inicio de la era Azuchi-Momoyama</h2>
+    <p>El período Azuchi-Momoyama comenzó con la victoria de Oda Nobunaga en la batalla de Okehazama en 1560, lo que le permitió consolidar su poder y establecer un gobierno militar en Kioto. Esta victoria marcó el inicio de un nuevo sistema de gobierno en Japón y sentó las bases para el futuro dominio samurái.</p>
+    <p>La victoria de Nobunaga permitió a los Oda consolidar su poder y establecer un gobierno militar en Kioto, lo que significó un cambio significativo en la estructura política de Japón. Este nuevo sistema de gobierno permitió a los samuráis ejercer un control más directo sobre las tierras y la población, sentando las bases para el futuro dominio samurái en la sociedad japonesa.</p>
+    <p>Además, la era Azuchi-Momoyama se caracterizó por el desarrollo de una cultura samurái distintiva, con un enfoque en las artes, la poesía y el teatro. El teatro Noh, en particular, se convirtió en una forma de arte importante durante este período, reflejando los valores y la estética de la clase samurái.</p>
+    <h2>¿Que influencia tuvieron los samurai?</h2>
+    <p>La influencia de los samuráis en la era Azuchi-Momoyama fue profunda y multifacética. Durante este período de unificación y consolidación del poder, los samuráis no solo fueron guerreros, sino que también desempeñaron roles clave en la política, la cultura y la sociedad, impulsando cambios significativos en la estructura de poder y las artes.</p>
+    <p>Estos se convirtieron en los principales actores en las luchas por el poder y el control territorial. Este período vio el surgimiento de líderes militares samuráis que utilizaron tácticas innovadoras y estrategias políticas para consolidar su poder y expandir sus territorios.</p>
+
+    <div class="clanes">
+        <h2>Clanes importantes de la era Azuchi-Momoyama</h2>
+        <ul>
+            <li><mark>Clan Oda:</mark> Liderado por Oda Nobunaga, uno de los clanes más poderosos y ambiciosos de la era Azuchi-Momoyama.</li>
+            <li><mark>Clan Toyotomi:</mark> Fundado por Toyotomi Hideyoshi, quien logró unificar Japón después de la muerte de Nobunaga.</li>
+            <li><mark>Clan Tokugawa:</mark> Liderado por Tokugawa Ieyasu, quien estableció el shogunato Tokugawa y trajo un período de paz y estabilidad.</li>
+        </ul>
+    </div>
+    <h2>Sucesos por los que termino la era Azuchi-Momoy</h2>
+    <p>La era Azuchi-Momoyama llegó a su fin en 1603 con el establecimiento del shogunato Tokugawa por Tokugawa Ieyasu, quien logró unificar Japón después de una serie de guerras civiles y conflictos territoriales. Este evento marcó el inicio del período Edo.</p>
+    <p>El final de la era Azuchi-Momoyama significó el colapso del sistema de clanes samuráis en guerra y el establecimiento de un gobierno central fuerte bajo el liderazgo de Tokugawa Ieyasu. Este nuevo sistema político permitió a los samuráis desempeñar un papel más administrativo y burocrático, alejándose de su papel tradicional como guerreros.</p>
+</div>
+
+<div id="tokugawa" class="era-info" style="display:none;">
+    <!-- Contenido de la era Tokugawa -->
+    <h2>¿Que fue la era Tokugawa?</h2>
+    <p>La era Tokugawa, que abarca desde 1603 hasta 1868, es un período crucial en la historia de Japón, marcado por el establecimiento del shogunato Tokugawa y un largo período de paz y estabilidad conocido como el período Edo. Durante esta época, los samuráis se convirtieron en administradores y funcionarios más que en guerreros activos, consolidando su influencia en la política y la sociedad japonesa.</p>
+    <p>El shogunato Tokugawa, fundado por Tokugawa Ieyasu, marcó un cambio significativo en la estructura política de Japón, con el shogunato gobernando desde Edo (actual Tokio). Este período también se caracterizó por el aislamiento de Japón del resto del mundo, lo que permitió el desarrollo de una cultura samurái distintiva y un florecimiento cultural notable.</p>
+    <img src="Imagenes/Tokugawa.jpg" alt="Era Tokugawa" class="samurai-image">
+    <p style="text-align: center; width: 600px;">Tokugawa Ieyasu, fundador del shogunato Tokugawa y uno de los líderes más influyentes de la era Tokugawa.</p>
+
+    <h2>Sucesos importantes que causaron el inicio de la era Tokugawa</h2>
+    <p>El período Tokugawa comenzó con la victoria de Tokugawa Ieyasu en la batalla de Sekigahara en 1600, lo que le permitió consolidar su poder y establecer un gobierno militar en Edo. Esta victoria marcó el inicio de un nuevo sistema de gobierno en Japón y sentó las bases para el futuro dominio samurái.</p>
+    <p>La victoria de Ieyasu permitió a los Tokugawa consolidar su poder y establecer un gobierno militar en Edo, lo que significó un cambio significativo en la estructura política de Japón. Este nuevo sistema de gobierno permitió a los samuráis ejercer un control más directo sobre las tierras y la población, sentando las bases para el futuro dominio samurái en la sociedad japonesa.</p>
+    <p>Además, la era Tokugawa se caracterizó por el desarrollo de una cultura samurái distintiva, con un enfoque en las artes, la poesía y el teatro. El teatro Noh, en particular, se convirtió en una forma de arte importante durante este período, reflejando los valores y la estética de la clase samurái.</p>
+    <h2>¿Que influencia tuvieron los samurai?</h2>
+    <p>La influencia de los samuráis en la era Tokugawa fue profunda y multifacética. Durante este período de paz y estabilidad, los samuráis no solo fueron guerreros, sino que también desempeñaron roles clave en la política, la cultura y la sociedad, impulsando cambios significativos en la estructura de poder y las artes.</p>
+    <p>Estos se convirtieron en los principales actores en las luchas por el poder y el control territorial. Este período vio el surgimiento de líderes militares samuráis que utilizaron tácticas innovadoras y estrategias políticas para consolidar su poder y expandir sus territorios.</p>
+    <div class="clanes">
+        <h2>Clanes importantes de la era Tokugawa</h2>
+        <ul>
+            <li><mark>Clan Tokugawa:</mark> Fundador del shogunato Tokugawa, consolidó el poder samurái en Japón.</li>
+            <li><mark>Clan Date:</mark> Uno de los clanes más influyentes durante el período Edo, conocido por su cultura y artes.</li>
+            <li><mark>Clan Shimazu:</mark> Poderoso clan del sur de Japón, conocido por su resistencia al shogunato Tokugawa.</li>
+        </ul>
+    </div>
+    <h2>Sucesos por los que termino la era Tokugawa</h2>
+    <p>La era Tokugawa llegó a su fin en 1868 con la Restauración Meiji, un movimiento que buscaba modernizar Japón y restaurar el poder imperial. Este evento marcó el colapso del shogunato Tokugawa y el inicio de un nuevo período en la historia japonesa.</p>
+    <p>El final de la era Tokugawa significó el colapso del sistema de gobierno militar establecido por Tokugawa Ieyasu y el ascenso del emperador Meiji al poder. Este nuevo sistema político permitió a los samuráis desempeñar un papel más administrativo y burocrático, alejándose de su papel tradicional como guerreros.</p>
+    
+
+</div>
+
+<p>Las fechas pueden variar ligeramente entre historiadores</p>
+    <footer>
+        <p>© 2025 Mi sitio web de redes</p>
+    </footer>
+
+    <script>
+const eras = [
+    { id: 'heian', nombre: 'Era Heian' },
+    { id: 'kamakura', nombre: 'Era Kamakura' },
+    { id: 'muromachi', nombre: 'Era Muromachi' },
+    { id: 'sengoku', nombre: 'Era Sengoku' },
+    { id: 'azuchi-momoyama', nombre: 'Era Azuchi-Momoyama' },
+    { id: 'tokugawa', nombre: 'Era Tokugawa' }
+];
+
+let pagina = 0; // 0 = primeras 3, 1 = siguientes 3
+
+function renderBotones() {
+    const contenedor = document.getElementById('botones-eras');
+    contenedor.innerHTML = '';
+    const inicio = pagina * 3;
+    const fin = inicio + 3;
+    eras.slice(inicio, fin).forEach(era => {
+        const btn = document.createElement('button');
+        btn.textContent = era.nombre;
+        btn.onclick = () => mostrarEra(era.id);
+        contenedor.appendChild(btn);
+    });
+    document.getElementById('anterior').style.display = pagina === 0 ? 'none' : '';
+    document.getElementById('siguiente').style.display = pagina === 1 ? 'none' : '';
+}
+
+document.getElementById('siguiente').onclick = function() {
+    pagina = 1;
+    renderBotones();
+};
+document.getElementById('anterior').onclick = function() {
+    pagina = 0;
+    renderBotones();
+};
+
+// Inicializa los botones al cargar
+renderBotones();
+</script>
+<script>
+function mostrarEra(era) {
+    // Oculta todas las eras
+    document.querySelectorAll('.era-info').forEach(div => div.style.display = 'none');
+    // Muestra solo la seleccionada
+    document.getElementById(era).style.display = 'block';
+}
+</script>
+</body>
+</html>
