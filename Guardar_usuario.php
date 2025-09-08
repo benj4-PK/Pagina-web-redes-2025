@@ -94,7 +94,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                         <p>Puede ingresar.</p>
 
-                        <a href='index.html'>ir al inicio</a>
+                        <a href='inicio.html'>ir al inicio</a>
 
 
                     </div>
@@ -141,11 +141,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                         <h2>¡Error!</h2>
 
-                        <p>Error al ingresar el alumno: " . $conn->error . "</p>
-
-                        <a href='ingresar_alumno.html'>Volver al formulario</a>
-
-                        <a href='consultar_alumnos.html'>Ver listado</a>
+                        <p>Error al ingresar: " . $conn->error . "</p>
 
                     </div>
 
