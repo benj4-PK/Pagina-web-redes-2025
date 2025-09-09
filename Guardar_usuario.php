@@ -4,11 +4,11 @@
 
 $servername = "localhost"; // Generalmente "localhost" para entornos locales
 
-$username = "root";        // Usuario por defecto de MySQL en XAMPP/WAMP
+$username = "phpMyAdmin";        // Usuario por defecto de MySQL en XAMPP/WAMP
 
-$password = "";            // Contraseña por defecto (vacía) en XAMPP/WAMP
-
-$dbname = "ingresar";       // Nombre de la base de datos que crearon
+$password = "RedesInformaticas";            // Contraseña por defecto (vacía) en XAMPP/WAMP
+    
+$dbname = "Ingresar";       // Nombre de la base de datos que crearon
 
 
 
