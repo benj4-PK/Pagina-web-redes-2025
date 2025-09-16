@@ -12,6 +12,7 @@
     <ul>
         <li><a href="../inicio.html">Inicio</a></li>
         <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="#" id="modo-claro-btn"><img src="Imagenes/modo_claro.png" alt=""></a></li>
     </ul>
     <div class="encabezado">
         <img src="../Imagenes/logo.png" alt="samurai" class="logo">
@@ -62,6 +63,12 @@ function enviarQuiz() {
 
         } 1000;
 
+</script>
+<script>
+document.getElementById('modo-claro-btn').onclick = function(e) {
+    e.preventDefault();
+    document.body.classList.toggle('modo-claro');
+};
 </script>
 </body>
 </html>

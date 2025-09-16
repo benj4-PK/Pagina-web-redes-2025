@@ -183,3 +183,50 @@ p  {
     max-width: 800px;
     margin: 20px auto;
 }
+
+#modo-claro-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+body.modo-claro {
+    background-color: #f5f5f5 !important;
+    color: #222 !important;
+}
+
+body.modo-claro header,
+body.modo-claro ul {
+    background-color: #fff !important;
+}
+
+body.modo-claro li a,
+body.modo-claro .encabezado h1,
+body.modo-claro h2,
+body.modo-claro p,
+body.modo-claro .clanes {
+    color: #222 !important;
+}
+
+body.modo-claro a {
+    background-color: #fff !important;
+    color: #222 !important;
+}
+
+body.modo-claro a:hover {
+    background-color: #e0e0e0 !important;
+}
+
+body.modo-claro .samurai-image {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    border: 2px solid #aaa;
+}
+body.modo-claro .accordion-header {
+    background: #e57373;
+    color: #222;
+}
+body.modo-claro .accordion-content {
+    background: #fff;
+    color: #222;
+}

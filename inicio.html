@@ -9,12 +9,17 @@
 </head>
 <header>
     <ul>
- <li><a href="inicio.html">Inicio</a></li>
- <li><a href="HTML/quiz.html">Quiz</a></li>
-</ul>
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="HTML/quiz.html">Quiz</a></li>
+        <li>
+            <a href="#" id="modo-claro-btn">
+                <img src="Imagenes/modo_claro.png" alt="Modo claro">
+            </a>
+        </li>
+    </ul>
     <div class="encabezado">
         <img src="Imagenes/logo.png" alt="samurai" class="logo">
-    <h1>La era samurai en Japón</h1>
+        <h1>La era samurai en Japón</h1>
     </div>
 </header>
 <body>
@@ -307,6 +312,8 @@ Fue el 96º emperador de Japón, reinando desde 1318 hasta 1339.</p>
         <p>© 2025 Mi sitio web de redes</p>
     </footer>
 
+--JS--
+
     <script>
 const eras = [
     { id: 'heian', nombre: 'Era Heian' },
@@ -346,6 +353,7 @@ document.getElementById('anterior').onclick = function() {
 // Inicializa los botones al cargar
 renderBotones();
 </script>
+
 <script>
 function mostrarEra(era) {
     // Oculta todas las eras
@@ -354,5 +362,13 @@ function mostrarEra(era) {
     document.getElementById(era).style.display = 'block';
 }
 </script>
+
+<script>
+document.getElementById('modo-claro-btn').onclick = function(e) {
+    e.preventDefault();
+    document.body.classList.toggle('modo-claro');
+};
+</script>
+
 </body>
 </html>
